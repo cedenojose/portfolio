@@ -237,7 +237,8 @@ span {
 }
 
 .about-content h2 {
-    text-align: left;
+    text-align: center;
+    margin-bottom: 5rem;
     line-height: 1.2;
 }
 .about-content h3 {
@@ -517,13 +518,15 @@ span {
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         /* display: none; */
         transition: all .5s ease;
-
+        
+        visibility: hidden;
         opacity: 0;
         height: 0;
         padding: 0;
     }
     .navbar.show {
         /* display: block; */
+        visibility: visible;
         opacity: 1;
         height: auto;
         padding: 1rem 3%;
